@@ -1,0 +1,94 @@
+.nav-list{
+    background-color: #123;
+    height: calc(100vh - 65px);
+    width: 60px;
+    overflow: hidden;
+    border-radius: 0 0 0 8px;
+    transition: 0.3s ease;
+    position: fixed;
+    top: 65px;
+    z-index: 999;
+}
+.nav-list:hover{
+    width: 18%;
+}
+
+.nav-items{
+    height: 100%;
+    position: relative;
+}
+.nav-items div{
+    margin-top: 15px;
+}
+
+.nav-items div a{
+    display: flex;
+    gap: 2px;
+    color: white;
+    align-items: center;
+}
+
+.user{
+    margin-bottom: 20px;
+}
+.user a{
+    cursor: text;
+}
+.user p{
+    font-weight: 700;
+}
+
+.home-item{
+    border-left: 5px solid #88b5e1;
+}
+.home{
+    margin-left: -5px;
+}
+.home,
+.home-txt{
+    color: #88b5e1;
+}
+
+.nav-items div a i{
+    font-size: 22px;
+    width: 60px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    padding: 0 19px;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav-items div a p {
+    white-space: nowrap;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    transition: 0.2s ease;
+}
+
+.log-out{
+    background-color: red;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    transition: 0.5s ease;
+}
+.log-out:hover{
+    background-color: #ff0000db;
+}
+.nav-items div:hover .gray-hover p{
+    margin-left: 10px;
+}
+.nav-items div:hover .gray-hover p,
+.nav-items div:hover .gray-hover i{
+    color: #ffffffcf;
+}
